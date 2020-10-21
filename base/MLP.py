@@ -16,7 +16,7 @@ import numpy as np
 """
 
 
-def load_data(path='C:\\Users\\张伟涛\\Desktop\\笔记\\tensorflow2_practice\\data\\mnist .npz'):
+def load_data(path='../data/mnist .npz'):
   with np.load(path, allow_pickle=True) as f:
     x_train, y_train = f['x_train'], f['y_train']
     x_test, y_test = f['x_test'], f['y_test']
